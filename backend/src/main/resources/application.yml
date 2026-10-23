@@ -1,6 +1,9 @@
+﻿server:
+  port: 8081
+
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/forum
+    url: jdbc:postgresql://127.0.0.1:5455/forum
     username: forum
     password: forum
   jpa:
