@@ -1,0 +1,15 @@
+services:
+  db:
+    image: postgres:16
+    container_name: forum-db
+    environment:
+      POSTGRES_DB: forum
+      POSTGRES_USER: forum
+      POSTGRES_PASSWORD: forum
+    ports:
+      - "5432:5432"
+    volumes:
+      - forum-data:/var/lib/postgresql/data
+
+volumes:
+  forum-data:
